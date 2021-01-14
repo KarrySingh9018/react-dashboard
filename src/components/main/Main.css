@@ -1,0 +1,128 @@
+main {
+  background: #f6f6f6; 
+  grid-area: main;
+}
+
+.main__container {
+  padding: 20px 35px;
+}
+
+.title {
+  margin-top: 0px;
+}
+
+.main__cards .card  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    height: 45px;
+    position: relative;
+    
+}
+
+.main__cards .card .icon{
+    height: 70px;
+    margin-top: -24px;
+    margin-bottom: -5px;
+    text-align: left;
+    padding: 24px 0px 0px 24px;
+    width: 80px;
+}
+.main__cards .card .content{
+    text-align: center;
+    justify-content: center;
+}
+
+.main__cards .card .content .card__name{
+    font-size: 13px;
+}
+    
+.button {
+  /* background-color: #2657eb; */
+  background-color: #2657eb;
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px;
+  margin-left: 970px;
+  border-radius: 35px;
+  right: 0;
+  cursor: pointer;
+}
+
+.main__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 10px 0; 
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50px;
+  padding: 23px;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.card_inner {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+  
+}
+
+.charts__left {
+  padding: 25px;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.charts__left .date {
+  margin-left: 570px;
+  height: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.charts__left__title > div > h1 {
+  font-size: 13px;
+  color: #2e4a66;
+  margin-bottom: 15px;
+}
+
+.charts__left__title .attr {
+  display: inline-block;
+}
+
+.charts__left__title .attr .name {
+  font-size: 10px;
+  color: #9dab86;
+}
+
+@media only screen and (max-width: 855px) {
+  .main__cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+}
